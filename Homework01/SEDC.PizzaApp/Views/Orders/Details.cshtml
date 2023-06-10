@@ -1,0 +1,18 @@
+﻿@model Orders;
+<style>
+    li {
+        color: green;
+    }
+</style>
+
+<h2>Orders Details:</h2>
+<ul>
+    <li>
+        Name of the customer: @Model.CustomerName
+        <ul>
+            <li>Price: @Model.Price</li>
+            <li>Date: @Model.OrderDate</li>
+            <li>Delivered: @Model.IsDelivered</li>
+        </ul>
+    </li>
+</ul>

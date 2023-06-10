@@ -1,0 +1,21 @@
+﻿@model List<Orders>
+<style>
+    li{
+        color: green;
+    }
+</style>
+
+<h2>Orders:</h2>
+
+<ul>
+    @foreach(Orders o in @Model)
+    {
+        <li>Custromer Name: @o.CustomerName
+            <ul>
+                <li>Price: @o.Price</li>
+                <li>Delivered: @o.IsDelivered</li>
+                <li>Date: @o.OrderDate</li>
+            </ul>
+        </li>
+    }
+</ul>
