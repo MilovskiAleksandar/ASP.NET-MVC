@@ -1,0 +1,8 @@
+﻿@*Homework03*@
+@model List<UserViewModel>
+
+<h2>USERS:</h2>
+@foreach (UserViewModel users in Model)
+{
+    <li>@users.UserFullName</li>
+}

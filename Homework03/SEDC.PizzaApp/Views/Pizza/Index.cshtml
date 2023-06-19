@@ -1,0 +1,16 @@
+﻿
+@model List<PizzaViewModel>
+
+<partial name="~/Views/Shared/Partials/_PizzaDetailsPartial.cshtml"/>
+    <ul>
+    @foreach(PizzaViewModel pizzas in Model)
+    {
+        <li>Name: @pizzas.PizzaName
+            <ul>
+                <li>Price: @pizzas.PizzaPrice</li>
+                <li>Size: @pizzas.PizzaSize</li>
+            </ul>
+        </li>
+    }
+    </ul>
+
